@@ -798,7 +798,7 @@ a.label:hover, a.label:focus {
 
 .sidebar ul.nav li a {
   height: 50px;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 2em;
   color: #444444; }
 
@@ -1031,3 +1031,50 @@ p.back-link {
   margin-bottom: 20px;
   font-size: 12px;
   text-transform: uppercase; }
+
+
+/* custom
+---------------------------*/
+
+@media (min-width: 992px) {
+  .custom-navbar-toggle {
+    display: none; } }
+
+.custom-navbar-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.col-main {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-side {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .col-main {
+    width: 100vw - 250px;
+    margin-left: 260px;
+    margin-right: 10px;
+  }
+
+  .col-side {
+    display: block;
+    width: 250px;
+  }
+}
